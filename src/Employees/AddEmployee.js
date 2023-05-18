@@ -182,7 +182,7 @@ const closedMixin = (theme) => ({
 //-----------Avatar-----
 const StyledBadge = styled(Badge)(({ theme }) => ({
   '& .MuiBadge-badge': {
-    backgroundColor: '#44b700',
+    backgroundColor: '#44b700', 
     color: '#44b700',
     boxShadow: `0 0 0 2px ${theme.palette.background.paper}`,
     '&::after': {
@@ -292,7 +292,7 @@ const submitHandler = async(e)  =>{
       })
       
 
-      let response = await axios.post('http://localhost:8000/employees/register',body,{
+      let response = await axios.post('https://mbemsbackend.onrender.com/employees/register',body,{
         headers:{
           'Content-Type':'application/json',
           'x-token':localStorage.getItem('token')
