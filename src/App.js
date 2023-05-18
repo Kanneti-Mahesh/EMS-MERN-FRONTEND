@@ -16,9 +16,9 @@ function App() {
         {/* <BrowserRouter> */}
           <Routes>
               <Route path='/' element={<Login/>}/>
-              <Route path='https://mbemsbackend.onrender.com/dashboard'element={<Dashboard/>}/>
-              <Route path='/dashboard/addemployee'element={<AddEmployee/>}/>
-              <Route path='/dashboard/editemployee'element={<EditEmployee/>}/>
+              <Route path='/dashboard' element={<Dashboard/>}/>
+              <Route path='/dashboard/addemployee' element={<AddEmployee/>}/>
+              <Route path='/dashboard/editemployee' element={<EditEmployee/>}/>
             </Routes>
          {/* </BrowserRouter> */}
       </div>
