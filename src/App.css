@@ -38,8 +38,17 @@
 .css-qkz7df:hover{
    cursor:pointer !important;
    background: #0d6efd !important;
+   border-radius:5px !important;
+   box-shadow:1px 1px 5px grey !important;
 }
 .css-qkz7df:hover .css-10z9ko2{
+   color:white !important;
+}
+
+.css-qkz7df:hover .css-yb0lig{
+   color:white !important;
+}
+.css-qkz7df:hover .css-3wucx{
    color:white !important;
 }
 
