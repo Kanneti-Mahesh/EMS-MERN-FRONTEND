@@ -295,7 +295,7 @@ let body = JSON.stringify({
   employeeDate:date
 })
 
-  let editEmp = await axios.put(`http://localhost:8000/employees/update/${id}`,body,{
+  let editEmp = await axios.put(`https://mbemsbackend.onrender.com/employees/update/${id}`,body,{
     headers:{
       'x-token':localStorage.getItem('token'),
       'Content-Type':'application/json'
@@ -514,7 +514,7 @@ const {Eid,Ename,department,email,date} = emp;
         </AppBar>
 
         <Drawer variant="permanent" open={open} className="sidebar">          
-            <DrawerHeader style={{background:"#F5F5F5",border:"1px solid #F0F0F0",boxShadow:"inset 2px 1px 8px #F0F0F0"}}>
+            <DrawerHeader style={{background:"#F5F5F5 !important",border:"1px solid #F0F0F0",boxShadow:"inset 2px 1px 8px #F0F0F0"}}>
             <span style={{marginRight:"5px",color:"grey"}}> MANAGEMENT SYSTEM </span>
             <hr/>
             <IconButton onClick={handleDrawerClose}>
