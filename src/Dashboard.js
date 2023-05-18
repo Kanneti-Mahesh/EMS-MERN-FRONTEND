@@ -213,7 +213,7 @@ const navigate = useNavigate();
 
 const getEmployees = e =>{
 
-  axios.get('http://localhost:8000/employees/list',{
+  axios.get('https://mbemsbackend.onrender.com/employees/list',{
     headers:{
       'x-token':localStorage.getItem('token')
     }
@@ -257,7 +257,7 @@ React.useEffect(()=>{
   const deleteEmp = async(id) =>{
 
       if(window.confirm("Are you sure you want to delete?")){
-        let delEmp = await axios.delete(`http://localhost:8000/employees/delete/${id}`,{
+        let delEmp = await axios.delete(`https://mbemsbackend.onrender.com/employees/delete/${id}`,{
           headers:{
             'x-token':localStorage.getItem('token'),
             'Content-Type':'application/json'
