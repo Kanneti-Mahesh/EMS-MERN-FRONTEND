@@ -19,6 +19,7 @@ function App() {
               <Route path='/dashboard' element={<Dashboard/>}/>
               <Route path='/dashboard/addemployee' element={<AddEmployee/>}/>
               <Route path='/dashboard/editemployee' element={<EditEmployee/>}/>
+              <Route path='/logout' element={<Dashboard/>}/>
             </Routes>
          {/* </BrowserRouter> */}
       </div>
