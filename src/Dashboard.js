@@ -253,7 +253,6 @@ React.useEffect(()=>{
       localStorage.removeItem('eemail');
       localStorage.removeItem('edate');
       window.location.reload();
-      navigate('https://mbemanagement.onrender.com');
   }
 
 
@@ -501,9 +500,11 @@ const changeColor = e =>{
           Settings
         </MenuItem>
         <MenuItem onClick={logoutAdmin}>
+            <Link to='/logout'>
           <ListItemIcon>
             <Logout fontSize="small"/>
           </ListItemIcon>
+               </Link>
              Logout
         </MenuItem>
       </Menu>
