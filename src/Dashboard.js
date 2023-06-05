@@ -6,7 +6,7 @@ import {Link, Navigate, useNavigate} from 'react-router-dom'
 
 //import local/external packages...
 import { styled, useTheme } from '@mui/material/styles';
-import Box from '@mui/material/Box';
+import Box from '@mui/material/Box' ;
 import MuiDrawer from '@mui/material/Drawer';
 import MuiAppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
@@ -236,7 +236,7 @@ React.useEffect(()=>{
 //     }
     
         if(!localStorage.getItem('token')){
-      return navigate('https://mbemanagement.onrender.com')
+      return navigate('/')
     }
 
 },[])
@@ -505,7 +505,7 @@ const changeColor = e =>{
             <Logout fontSize="small"/>
           </ListItemIcon>
              </Link>
-            <Link to='/'> Logout </Link'>
+            <Link to='/'> Logout </Link>
         </MenuItem>
       </Menu>
 
