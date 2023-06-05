@@ -500,12 +500,12 @@ const changeColor = e =>{
           Settings
         </MenuItem>
         <MenuItem onClick={logoutAdmin}>
-            <Link to='/logout'>
+            <Link to='/'>
           <ListItemIcon>
             <Logout fontSize="small"/>
           </ListItemIcon>
-               </Link>
-             Logout
+             </Link>
+            <Link to='/'> Logout </Link'>
         </MenuItem>
       </Menu>
 
