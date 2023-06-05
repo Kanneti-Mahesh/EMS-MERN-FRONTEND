@@ -19,7 +19,6 @@ function App() {
               <Route path='/dashboard' element={<Dashboard/>}/>
               <Route path='/dashboard/addemployee' element={<AddEmployee/>}/>
               <Route path='/dashboard/editemployee' element={<EditEmployee/>}/>
-              <Route path='/logout' element={<Login/>}/>
             </Routes>
          {/* </BrowserRouter> */}
       </div>
