@@ -505,7 +505,7 @@ const changeColor = e =>{
             <Logout fontSize="small"/>
           </ListItemIcon>
              </Link>
-            <Link to='/'> Logout </Link>
+            <Link to='/' style={{textDecoration:"none",color:"black"}}> Logout </Link>
         </MenuItem>
       </Menu>
 
