@@ -231,8 +231,12 @@ React.useEffect(()=>{
     getEmployees();
 
 
-    if(!localStorage.getItem('token')){
-      return navigate('/')
+//     if(!localStorage.getItem('token')){
+//       return navigate('/')
+//     }
+    
+        if(!localStorage.getItem('token')){
+      return navigate('https://mbemanagement.onrender.com')
     }
 
 },[])
